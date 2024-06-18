@@ -1,0 +1,100 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:padding="16dp"
+    tools:context=".view.AddMissionTaskActivity">
+
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:hint="Nome da Missão/Tarefa"
+        android:textColorHint="@color/black"
+        android:background="#89a663"
+        android:padding="10dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etDescricao"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:background="#89a663"
+        android:hint="Descrição da Missão/Tarefa"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etStatus"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:background="#89a663"
+        android:hint="Status da Missão/Tarefa"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etDescricao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etDataInicio"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:background="#89a663"
+        android:hint="Data de Início"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etDataFim"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:background="#89a663"
+        android:hint="Data de Fim"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etDataInicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#89a663"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/etDataFim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#89a663"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/btnSalvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

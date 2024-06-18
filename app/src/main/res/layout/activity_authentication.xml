@@ -1,0 +1,178 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".view.AuthenticationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/rsmap"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAuthHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Acesse ou Cadastre-se"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/logoImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Email"
+            android:textColorHint="@color/black"
+            android:background="#89a663"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@id/tvAuthHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Senha"
+            android:textColorHint="@color/black"
+            android:background="#89a663"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/etEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <Spinner
+            android:id="@+id/spinnerUserType"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="#89a663"
+            app:layout_constraintTop_toBottomOf="@id/etPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Nome"
+            android:textColorHint="@color/black"
+            android:background="#89a663"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/spinnerUserType"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <!-- Campos adicionais para Voluntários -->
+        <EditText
+            android:id="@+id/etHabilidades"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Habilidades"
+            android:textColorHint="@color/black"
+            android:background="#89a663"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/etNome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <EditText
+            android:id="@+id/etDisponibilidade"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Disponibilidade"
+            android:textColorHint="@color/black"
+            android:background="#89a663"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/etHabilidades"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <!-- Placeholder para empurrar os botões quando os campos de Voluntário aparecem -->
+        <View
+            android:id="@+id/placeholderVoluntario"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/etDisponibilidade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Placeholder para empurrar os botões quando os campos de Doador aparecem -->
+        <View
+            android:id="@+id/placeholderDoador"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/etNome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:text="Entrar"
+            android:backgroundTint="#89a663"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/placeholderVoluntario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cadastrar"
+            android:backgroundTint="#89a663"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

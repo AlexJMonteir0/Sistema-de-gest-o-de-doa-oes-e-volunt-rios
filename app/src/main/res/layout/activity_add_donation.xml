@@ -1,0 +1,113 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".view.AddDonationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/topo_img"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/rsmap"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etTipo"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:hint="Tipo de Doação"
+            android:textColorHint="@color/black"
+            android:background="#89a663"
+            app:layout_constraintTop_toBottomOf="@id/topo_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <EditText
+            android:id="@+id/etQuantidade"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:background="#89a663"
+            android:hint="Quantidade"
+            android:inputType="number"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etTipo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <EditText
+            android:id="@+id/etDataEntrada"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:background="#89a663"
+            android:hint="Data de Entrada"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etQuantidade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <EditText
+            android:id="@+id/etDataSaida"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:background="#89a663"
+            android:hint="Data de Saída"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etDataEntrada"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#89a663"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/etDataSaida"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#89a663"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/btnSalvar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_percent="0.8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

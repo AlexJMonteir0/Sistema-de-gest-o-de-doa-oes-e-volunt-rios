@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1015621897856",
+    "firebase_url": "https://gestaovoluntariosdoadores-default-rtdb.firebaseio.com",
+    "project_id": "gestaovoluntariosdoadores",
+    "storage_bucket": "gestaovoluntariosdoadores.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015621897856:android:157cedd638b0d85e792065",
+        "android_client_info": {
+          "package_name": "br.com.alex.gestao_de_doaoes_e_voluntarios_alex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPiGW4nZpoaJEEZZe68QIle_Pj-YmpIe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015621897856:android:43093a7348bc5861792065",
+        "android_client_info": {
+          "package_name": "br.com.alex.gestao_de_voluntarios_e_doadores_em_situacoes_de_desastre"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPiGW4nZpoaJEEZZe68QIle_Pj-YmpIe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

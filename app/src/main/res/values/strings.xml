@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gestao_de_doaçoes_e_voluntarios_alex</string>
+
+    <string-array name="user_types">
+        <item>Selecionar Tipo:</item>
+        <item>Voluntário</item>
+        <item>Doador</item>
+    </string-array>
+</resources>
